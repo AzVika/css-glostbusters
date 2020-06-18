@@ -22,6 +22,18 @@ body {
 	font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+	.conteiner {
+		width: 80%;
+	}
+}
+
+@media (max-width: 576px) {
+	.conteiner {
+		width: 95%;
+	}
+}
+
 /* ---------------------   header -----------------------  */
 
 .header {
@@ -33,7 +45,6 @@ body {
 }
 
 .header-logo {
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -131,6 +142,84 @@ body {
 
 }
 
+.mobile-btn {
+	display: none;
+}
+
+.m-menu-btn, .search-btn {
+	padding: 5px;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.menu-line {
+	display: block;
+	width: 16px;
+	height: 2px;
+	background-color: #000;
+	flex-basis: 16px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: 40px;
+	
+}
+
+@media (max-width: 1200px) {
+	.header-logo::after {
+		height: 61px;
+		margin-left: 20px;
+	}
+
+	.search-input {
+		margin-left: 20px;
+	}
+
+	.navigation {
+		margin-right: 20px;
+	}
+
+	.navigation-link {
+		margin-right: 10px;
+		font-size: 16px;
+	}
+
+	.sign-up {
+		padding: 20px;
+	}
+
+	.login {
+		padding: 20px 40px;
+	}
+}
+
+@media (max-width: 991px) {
+	.navigation {
+		display: none;
+	}
+
+	.search-input {
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 786px) {
+	.header {
+		height: 60px;
+		padding-right: 34px;
+	}
+
+	.search-input, 
+	.button-group, 
+	.header-logo:after {
+		display: none;
+	}
+
+	.mobile-btn {
+	display: block;
+}
+}
+
 /* ---------------------   section film -----------------------  */
 
 .film {
@@ -150,7 +239,7 @@ body {
 }
 
 .poster {
-	max-width: 358px;
+	/*max-width: 358px;*/
 	border-radius: 5px 5px 0 0;
 }
 
@@ -205,7 +294,7 @@ body {
 }
 
 .about-text {
-	flex-basis: 40%;
+	flex-basis: 42%;
 	margin: 0 40px 16px 0;
 	padding: 0;
 	display: flex;
@@ -261,7 +350,84 @@ body {
 	margin: 0 7px 7px 0;
 }
 
-/* ---------------------   cats -----------------------  */
+@media (max-width: 991px) {
+	.film-title {
+		font-size: 24px;
+		line-height: 1.4;
+	}
+
+	.film-subtitle {
+		margin-bottom: 20px;
+	}
+
+	.film-description, .about-film {
+		margin-bottom: 30px;
+	}
+
+	.about-text {
+		flex-basis: 95%;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 867px) {
+	.film {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+
+	.film-wrapper {
+		flex-wrap: wrap;
+	}
+
+	.film-text {
+		order: -1;
+		margin-bottom: 30px;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.film-text {
+		order: 1;
+		margin-bottom: 0;
+		margin-top: 30px;		
+	}
+
+	.film-title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.film-subtitle {
+		font-size: 14px;
+		margin-bottom: 26px;
+	}
+
+	.film-description {
+		margin-bottom: 40px;
+	}
+
+	.film-trailer {
+		width: 99%;
+		margin: 0 auto;
+	}
+	.poster {
+		width: 100%;
+	}
+
+	.about-text {
+		margin-bottom: 16px;
+	}
+
+	.about-film {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+/* ---------------------   cast -----------------------  */
 
 .cast {
 	padding-top: 70px;
@@ -319,4 +485,118 @@ body {
 	color: #A5A5A5;
 }
 
+
+@media (max-width: 1200px) {
+	.card-img {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@media (max-width: 991px) {
+	.card {
+		flex-basis: 50%;
+	}
+
+	.card-img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cast {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 576px) {
+	.tabs {
+		padding-bottom: 45px;
+	}
+
+	.card {
+		flex-basis: 95%;
+	}
+
+	.card-img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+/* ---------------------   news -----------------------  */
+.news {
+	padding: 70px 0 100px;
+	background: #F3F3F3;
+}
+
+.news-main-title {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+	margin: 0 0 65px;
+}
+
+.news-cards {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.news-card {
+	flex-basis: 23%;
+	background: #FFFFFF;
+	border-radius: 5px;
+	padding: 30px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.news-date {
+	margin: 0;
+}
+
+.news-title {
+	margin: 0;
+	margin-top: 14px;
+}
+
+.news-link {
+	font-weight: 900;
+	color: #000000;
+	text-decoration: none;
+}
+
+@media (max-width: 991px) {
+	.news-card {
+		flex-basis: 48%;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.news {
+		padding: 50px 0 50px;
+	}
+}
+
+@media (max-width: 576px) {
+	.news-card {
+		flex-basis: 95%;
+		margin-bottom: 0;
+	}
+}
+
+
+/* ---------------------   footer -----------------------  */
+.footer {
+	padding: 10px 0; 
+}
 
