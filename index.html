@@ -15,8 +15,12 @@
 </head>
 <body>
 	<header class="header">
-		<img src="img/logo.png" alt="Logo: film" class="logo">
+		<a href="./index.html" class="header-logo">
+			<img src="img/logo.png" alt="Logo: film" class="logo-img" width="68">
+		</a>
+
 		<input type="text" name="search" class="search-input" placeholder="Поиск по фильмам...">
+
 		<nav class="navigation">
 			<ul class="navigation-lists">
 				<li>
@@ -42,6 +46,141 @@
 	</header>
 
 	<main class="main">
+		<section class="film">
+			<div class="conteiner">
+				<div class="film-wrapper">
+					<div class="film-trailer">
+						<img src="img/poster.jpg" alt="Poster" class="poster">
+						<button class="trailer-btn">
+							<img src=img/play.svg alt="play" class="trailer-btn-icon">
+							<span class="trailer-btn-text">Посмотреть трейлер</span>
+						</button>
+					</div><!-- /.film-trailer -->
+
+					<div class="film-text">
+						<h1 class="film-title">
+							Охотники за привидениями: <br> Наследники
+						</h1>
+						<p class="film-subtitle">Ghostbusters: Afterlife</p>
+						<p class="film-description">Мать-одиночка с двумя детьми-подростками селится на старой ферме  в&nbsp;Оклахоме, полученной в наследство от отца, которого она не знала.  Дети пытаются больше узнать о&nbsp;своем деде и находят автомобиль Ecto-1, принадлежавший знаменитым охотникам за привидениями.</p>
+
+						<ul class="about-film">
+							<li class="about-text">
+								<p class="about-text-bold">Режиссер</p>
+								<p class="about-text-reg">Джейсон Райтман</p>
+							</li>
+							<li class="about-text">
+								<p class="about-text-bold">Сценарий</p>
+								<p class="about-text-reg">Дэн Эйкройд</p>
+							</li>
+							<li class="about-text">
+								<p class="about-text-bold">Премьера</p>
+								<p class="about-text-reg">09.07.2020 (РФ)</p>
+							</li>
+							<li class="about-text">
+								<p class="about-text-bold">Бюджет</p>
+								<p class="about-text-reg">1 000 000 $</p>
+							</li>
+							<li class="about-text">
+								<p class="about-text-bold">Кинопрокат</p>
+								<p class="about-text-reg">SPPR</p>
+							</li>
+						</ul>
+
+						<div class="rating">
+							<div class="rating-counter">92%</div>
+							<div class="rating-description">
+								<h3 class="rating-title">Рейтинг зрителей</h3>
+								<p class="reting-text">
+									Средняя оценка: 
+									<span class="bold">4,5/5</span>
+								</p>
+								<p class="reting-text">
+									Всего голосов: 
+									<span class="bold">4 350</span>
+								</p>
+							</div>
+						</div>
+						
+					</div><!-- /.film-text -->
+				</div><!-- /.film-wrapper -->
+			</div><!-- /.conteiner -->
+		</section><!-- /.film -->
+
+		<section class="cast">
+			<div class="conteiner">
+				<div class="tabs">
+					<h2 class="section-title active">Актеры</h2>
+					<h2 class="section-title">Создатели</h2>
+				</div>
+
+				<div class="tabs-content">
+					<div class="card">
+						<img src="img/actors/1.png" alt="Кэрри Кун" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Кэрри Кун</h3>
+							<p class="en-name">Carrie Coon</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/2.png" alt="Билл Мюррей" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Билл Мюррей</h3>
+							<p class="en-name">Bill Murray</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/3.png" alt="Пол Радд" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Пол Радд</h3>
+							<p class="en-name">Paul Rudd</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/4.png" alt="Энни Поттс" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Энни Поттс</h3>
+							<p class="en-name">Annie Potts</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/5.png" alt="МакКенна Грейс" class="card-img">
+						<div class="card-text">
+							<h3 class="name">МакКенна Грейс</h3>
+							<p class="en-name">Mckenna Grace</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/6.jpg" alt="Дэн Эйкройд" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Дэн Эйкройд</h3>
+							<p class="en-name">Dan Aykroyd</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/7.png" alt="Эрни Хадсон" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Эрни Хадсон</h3>
+							<p class="en-name">Ernie Hudson</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/actors/8.png" alt="Финн Вулфард" class="card-img">
+						<div class="card-text">
+							<h3 class="name">Финн Вулфард</h3>
+							<p class="en-name">Finn Wolfhard</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.conteiner -->
+		</section><!-- /.cast -->
 		
 	</main>
 

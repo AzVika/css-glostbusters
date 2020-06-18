@@ -1,8 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	color: #000;
+	font-size: 14px;
+	line-height: 150%;
+	color: #363636;
+	/*background-color: #E5E5E5;*/
 	
 }
+
+.conteiner {
+	max-width: 1130px;
+	margin: 0 auto;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+/* ---------------------   header -----------------------  */
 
 .header {
 	display: flex;
@@ -10,6 +30,22 @@ body {
 	justify-content: space-between;
 	border-bottom: 1px solid #d4d4d4;
 	padding-left: 34px;
+}
+
+.header-logo {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-logo::after {
+	content: "";
+	width: 1px;
+	height: 104px;
+	display: inline-block;
+	background-color: #d4d4d4;
+	margin-left: 34px;
 }
 
 .search-input {
@@ -23,7 +59,11 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	color: #a5a5a5;
-	margin-left: 34px;
+	margin-left: 34px;	
+}
+
+.search-input:focus {
+	outline-color: #d4d4d4;
 }
 
 .navigation {
@@ -39,11 +79,27 @@ body {
 }
 
 .navigation-link {
+	position: relative;
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 21px;
 	color: #363636;
 	margin-right: 18px;
+}
+
+.navigation-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 1px;
+	background-color: #000;
+	transition: width 0.2s;
+}
+
+.navigation-link:hover::after {
+	width: 100%;
 }
 
 .button-group {
@@ -62,6 +118,9 @@ body {
 .sign-up {
 	color: #5671f6;
 	background-color: #fff;
+	border-left: 1px solid #d4d4d4;
+	padding-left: 44px;
+	padding-right: 44px;
 }
 
 .login {
@@ -71,4 +130,193 @@ body {
 	padding-right: 50px;
 
 }
+
+/* ---------------------   section film -----------------------  */
+
+.film {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #D4D4D4;
+}
+
+.film-wrapper {
+	display: flex;
+
+}
+
+.film-trailer {
+	display: flex;
+	flex-direction: column;
+}
+
+.poster {
+	max-width: 358px;
+	border-radius: 5px 5px 0 0;
+}
+
+.trailer-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #d4d4d4;
+	border-radius: 0 0 5px 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.trailer-btn-icon {
+	margin-right: 14px;
+}
+
+
+.film-text {
+	margin-left: 60px;
+}
+
+.film-title {
+	margin: 0 16px 16px 0;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.film-subtitle {
+	font-size: 18px;
+	line-height: 21px;
+	color: #A5A5A5;
+	margin-bottom: 32px;
+}
+
+.film-description {
+	max-width: 514px;
+	margin-bottom: 50px;
+}
+
+.about-film {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 34px;
+}
+
+.about-text {
+	flex-basis: 40%;
+	margin: 0 40px 16px 0;
+	padding: 0;
+	display: flex;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.about-text-bold {
+	font-weight: 700;
+	width: 100px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.about-text-reg {
+	margin: 0;
+}
+
+
+.rating {
+	display: flex;
+	align-items: center;
+}
+
+.rating-counter {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #5671F6;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #5671F6;
+}
+
+.rating-description {
+	margin-left: 28px;
+}
+
+.rating-title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0 12px 12px 0;
+}
+
+.reting-text {
+	font-size: 16px;
+	line-height: 19px;
+	margin: 0 7px 7px 0;
+}
+
+/* ---------------------   cats -----------------------  */
+
+.cast {
+	padding-top: 70px;
+	padding-bottom: 65px;
+}
+
+.tabs {
+	display: flex;
+	padding-bottom: 60px; 	
+}
+
+.section-title {
+	font-size: 24px;
+	line-height: 28px;
+	color: #A5A5A5;
+	margin-right: 30px;
+}
+
+.section-title.active {
+	font-weight: 900;
+	color: #363636;
+}
+
+.tabs-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	flex-basis: 25%;
+	margin-bottom: 35px;
+}
+
+.card-img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #5671F6;
+}
+
+.en-name {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #A5A5A5;
+}
+
 
