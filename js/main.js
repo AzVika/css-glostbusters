@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 	function toggleMenu () {
 		nMenu.toggleClass('active');
+		nMenuBtn.toggleClass('active');
 		$('body').toggleClass('no-scroll');
 	}
 
@@ -29,7 +30,10 @@ $(document).ready(function () {
 	var mySwiper = new Swiper('.swiper-container', {
 	    spaceBetween: 25,
 	    loop: true,
-	    slidesPerView: 4,
+	    // slidesPerView: 4,
+	    autoplay: {
+		  delay: 5000,
+		},
 	    breakpoints: {
 	    	992: {
 	    		slidesPerView: 4,
@@ -37,9 +41,8 @@ $(document).ready(function () {
 	    	768: {
 	    		slidesPerView: 2,
 	    	},
-	    	320: {
+	    	576: {
 	    		slidesPerView: 1,
-	    		slidesOffsetAfter: 50,
 	    		navigation: {
 	    			nextEl: '.btn-next'
 	    		}
