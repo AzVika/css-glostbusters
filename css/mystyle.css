@@ -797,12 +797,12 @@ body {
 	margin-bottom: 0;
 }
 
-.navigation-link {
+.footer-navigation .navigation-link {
 	color: #363636;
 	font-size: 16px;
 }
 
-.navigation-link::after {
+.footer-navigation .navigation-link::after {
 	background-color: #000;
 }
 
