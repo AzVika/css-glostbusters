@@ -38,10 +38,10 @@ $(document).ready(function () {
 	    	992: {
 	    		slidesPerView: 4,
 	    	},
-	    	768: {
+	    	576: {
 	    		slidesPerView: 2,
 	    	},
-	    	576: {
+	    	320: {
 	    		slidesPerView: 1,
 	    		navigation: {
 	    			nextEl: '.btn-next'
